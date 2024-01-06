@@ -1,0 +1,408 @@
+@import url("https://fonts.googleapis.com/css2?family=Work+Sans:wght@300;400&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Roboto+Serif:opsz,wght@8..144,300;8..144,400&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+header {
+  background-color: rgb(44, 39, 45);
+  color: #fff;
+  padding: 15px;
+  text-align: center;
+  height: 80px;
+  overflow: auto;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  font-size: 20pt;
+  font-family: "Viga", sans-serif;
+  display: flex;
+  flex-direction: row;
+}
+
+.logo img{
+    height: auto;
+    width: 180px;
+    padding-top: 12px;
+}
+
+nav {
+    display: block;
+    margin: auto;
+    padding: 0;
+}
+
+.navLink {
+  text-decoration: none;
+  color: #fff;
+  font-size: 20px;
+  margin: 0 auto;
+  padding: 0 1rem;
+  font-weight: 300;
+  font-family: "Work Sans", sans-serif;
+  text-transform: uppercase;
+}
+
+.navLink:hover {
+  color: rgb(115, 117, 120);
+}
+
+.heading {
+  margin-top: 80px;
+}
+
+.heading img {
+  width: 100%;
+  height: auto;
+  max-height: 680px;
+  object-fit: cover;
+  margin: 0;
+  padding: 0;
+}
+
+.section2 {
+  background-color: rgb(229, 235, 236);
+  margin: 0;
+  padding: 0 0 80px;
+}
+
+.section2 h1 {
+  display: flex;
+  margin: 0 auto;
+  padding: 2.25rem 0 2.25rem 10%;
+  font-family: "Roboto Serif", serif;
+  font-size: 36px;
+  font-weight: 300;
+}
+
+.gridContainer {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-gap: 1rem;
+  display: flex;
+  margin: 0 auto;
+  padding: 2.5rem 0;
+  max-width: 780px;
+}
+
+.gridItem {
+  width: 350px;
+  font-family: "Work Sans", sans-serif;
+  font-size: 18px;
+  line-height: 28px;
+  font-weight: 300;
+  padding: 1rem;
+}
+
+.section2 img {
+  width: 760px;
+  height: auto;
+  display: flex;
+  margin: 0 auto;
+  padding: 0;
+}
+
+.section3 {
+  background-color: #fff;
+  color: rgb(33, 37, 41);
+  margin: 0;
+  padding: 0;
+}
+
+.section3 blockquote {
+  font-family: "Roboto Serif", serif;
+  font-size: 36px;
+  font-weight: 300;
+  padding: 8rem 2rem;
+  margin: 0 auto;
+  text-align: center;
+  max-width: 1200px;
+}
+
+.container1 {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 0.15fr 1fr 0.15fr 1fr 0.15fr 1fr;
+  gap: 0px 0px;
+  grid-auto-flow: row;
+  grid-template-areas:
+    "Nothing Expertise"
+    "ExpertisePic ExpertiseDesc"
+    "Capabilities Nothing2"
+    "CapabilitiesDesc CapabilitiesPic"
+    "Nothing3 Creativity"
+    "CreativityPic CreativityDesc";
+  margin: 0 auto;
+  padding: 5rem 2rem;
+}
+
+.Nothing, .Capabilities,
+.Nothing3 {
+    border: 1px solid #bcbec0;
+    border-left: none;
+}
+
+.Expertise, .Nothing2,
+.Creativity {
+    border: 1px solid #bcbec0;
+    border-right: none;
+    border-left: none;
+}
+
+.Expertise {
+  grid-area: Expertise;
+  font-family: "Roboto Serif", serif;
+  font-size: 36px;
+  font-weight: 300;
+  padding: 2rem;
+}
+
+.ExpertisePic {
+  grid-area: ExpertisePic;
+  padding-bottom: 2rem;
+  text-align: right;
+}
+
+.ExpertiseDesc {
+  grid-area: ExpertiseDesc;
+  font-family: "Work Sans", sans-serif;
+  font-size: 20px;
+  padding: 2rem;
+}
+
+.Capabilities {
+  grid-area: Capabilities;
+  font-family: "Roboto Serif", serif;
+  font-size: 36px;
+  font-weight: 300;
+  padding: 2rem;
+}
+
+.CapabilitiesDesc {
+  grid-area: CapabilitiesDesc;
+  font-family: "Work Sans", sans-serif;
+  font-size: 20px;
+  padding: 2rem;
+}
+
+.CapabilitiesPic {
+  grid-area: CapabilitiesPic;
+  padding-bottom: 2rem;
+}
+
+.Creativity {
+  grid-area: Creativity;
+  font-family: "Roboto Serif", serif;
+  font-size: 36px;
+  font-weight: 300;
+  padding: 2rem;
+}
+
+.CreativityPic {
+  grid-area: CreativityPic;
+  text-align: right;
+}
+
+.CreativityDesc {
+  grid-area: CreativityDesc;
+  font-family: "Work Sans", sans-serif;
+  font-size: 20px;
+  padding: 2rem;
+}
+
+.section4 {
+    margin: 0 2rem;
+    padding: 8rem 2rem;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.section4 blockquote {
+    font-family: "Roboto Serif", serif;
+    font-size: 40px;
+    font-weight: 300;
+    padding: 4rem 2rem;
+    text-align: left;
+}
+
+.section4 blockquote > footer {
+    font-family: "Roboto Serif", serif;
+    font-size: 36px;
+    font-weight: 300;
+    padding-top: 3rem;
+}
+
+.section4 blockquote > footer > p {
+    font-family: "Work Sans", sans-serif;
+    font-size: 14px;
+    font-weight: 400;
+}
+
+.section5 {
+    background-color: #a1c7e3;
+    display: flex;
+    padding: 4rem 2rem;
+}
+
+.section5 img {
+    width: 40%;
+    height: auto;
+    margin: 2rem auto;
+}
+
+.section6 {
+    background-color: rgb(229, 235, 236);
+    margin: 0;
+    padding-bottom: 5rem;
+}
+
+.section6Header {
+    width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+    padding-left: 2rem;
+    padding-right: 2rem;
+    max-width: 1200px;
+}
+
+.section6 h1 {
+    display: flex;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 2.25rem 2rem 2.25rem 2rem;
+    font-family: "Roboto Serif", serif;
+    font-size: 36px;
+    font-weight: 300;
+}
+
+.imgContainer {
+    display: flex;
+}
+
+.section6 img {
+    max-width: 1120px;
+    height: auto;
+    object-fit: cover;
+    margin: 0 auto;
+}
+
+.container2 {  display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    gap: 0px 0px;
+    grid-template-areas:
+      "maloufFoundation learnMore"
+      "maloufFoundation nothingBtn";
+    /* display: flex;
+    margin: 0 auto; */
+    padding: 2.25rem 2rem 2.25rem 2rem;
+    max-width: 1200px;
+    width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+.maloufFoundation {
+    grid-area: maloufFoundation;
+    width: 568px;
+    margin: 2.25rem 0;
+    padding-left: 2rem;
+    font-family: "Work Sans", sans-serif;
+    font-size: 20px;
+}
+
+.learnMore {
+    grid-area: learnMore;
+    margin: 0 auto;
+}
+
+button {
+    background-color: #fff;
+    color: #2c272d;
+    border: none;
+    padding: 1.5rem 2rem;
+    max-width: 200px;
+    margin: 2.25rem auto;
+    font-family: "Work Sans", sans-serif;
+    font-size: 14px;
+    letter-spacing: 1.4px;
+    text-transform: uppercase;
+    cursor: pointer;
+}
+
+.section7 {
+    background-color: #2c272d;
+    color: #fff;
+    margin: 0;
+    padding-bottom: 5rem;
+    border-bottom: 1px solid rgb(229, 231, 235);
+}
+
+.section7Header {
+    width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+    padding-left: 2rem;
+    padding-right: 2rem;
+    max-width: 1200px;
+}
+
+.section7 h1 {
+    display: flex;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 2.25rem 2rem 2.25rem 2rem;
+    font-family: "Roboto Serif", serif;
+    font-size: 36px;
+    font-weight: 300;
+}
+
+.container3 {  display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr;
+    gap: 0px 0px;
+    grid-auto-flow: row;
+    grid-template-areas:
+      "section7Desc section7Logo";
+    padding: 2.25rem 2rem 2.25rem 2rem;
+    max-width: 1200px;
+    width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  
+  .section7Desc {
+    grid-area: section7Desc;
+    width: 568px;
+    margin: 2.25rem 0;
+    padding-left: 2rem;
+    font-family: "Work Sans", sans-serif;
+    font-size: 20px;
+}
+  
+  .section7Logo {
+    grid-area: section7Logo;
+    margin: 0 auto;
+}
+
+.section7Logo img {
+    width: 100%;
+    height: auto;
+    margin: 0 auto;
+    padding: 2rem 0;
+}
+
+.section7ImgContainer {
+    display: flex;
+    padding-top: 2rem;
+}
+
+.section7ImgContainer img {
+    max-width: 1120px;
+    height: auto;
+    object-fit: cover;
+    margin: 0 auto;
+}
